@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+input,
+button,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+.todo {
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 600px;
+}
+.todo-form {
+    width: 100%;
+    display: flex;
+}
+.todo-submit {
+    padding: 15px;
+    border: 0;
+    background-color: #2979ff;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    flex-shrink: 0;
+}
+.todo-input {
+    width: 100%;
+    border: 1px solid #eee;
+    outline: none;
+    padding: 15px;
+    border-radius: 10px 0 0 10px;
+}
+.todo-item {
+    margin-top: 15px;
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+}
+.todo-text {
+    flex: 1;
+    font-weight: 300;
+    color: #333;
+}
+.todo-remove {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #fc5776;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size:15px;
+    color: #fff;
+}
+.btn-clear {
+  outline: none;
+  padding: 10px 20px;
+  color: #fff;
+  min-width: 400px;
+  font-size: 20px;
+  border-radius: 10px;
+  display: block;
+  margin: 30px auto;
+  cursor: pointer;
+  border: none;
+  background-color: #2979ff;
+}
